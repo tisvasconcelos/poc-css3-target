@@ -1,8 +1,77 @@
-body{
+*{
 	margin: 0;
-	background: #000;
+	padding: 0;
+	list-style: none;
+	border: 0 none;
 }
 
-h2{
-	color: #fff;
+html{
+	font: normal normal 10px/1.2em arial;
+	background: #000;
+	overflow: hidden;
+	z-index: 0;
+}
+
+nav{
+	position: absolute;
+	z-index: 2;
+	background: rgba(0,0,0,.5);
+	padding: 20px 10px;
+	border-radius: 0 0 6px 0;
+}
+
+	nav a{
+		color: #fff;
+		font-size: 2em;
+		margin: 0 10px;
+	}
+
+.stage{
+	position: fixed;
+	background-size: 100% auto;
+	top: 0;
+	bottom: 0;
+	left: 100%;
+	right: -100%;
+	z-index: 0;
+	text-align: center;
+}
+
+	.stage .text{
+		background: rgba(0,0,0,.4);
+		padding: 20px;
+		border-radius: 6px;
+		position: absolute;
+		bottom: 100px;
+		left: 50px;
+		z-index: 2;
+		max-width: 700px;
+		text-align: left;
+	}
+
+		.stage .text p{
+			color: #fff;
+			font-family: Georgia;
+			font-size: 2em;
+			line-height: 1.4em;
+		}
+
+.stage:target{
+	left: 0;
+	right: 0;
+}
+
+#container1{
+	background-color: blue;
+	background-image: url(img1.jpg);
+}
+
+#container2{
+	background-color: blue;
+	background-image: url(img2.jpg);
+}
+
+#container3{
+	background-color: blue;
+	background-image: url(img3.jpg);
 }
