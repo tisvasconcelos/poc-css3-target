@@ -28,6 +28,8 @@ nav{
 
 .stage{
 	position: fixed;
+	-webkit-background-size: 100% auto;
+	-moz-background-size: 100% auto;
 	background-size: 100% auto;
 	top: 0;
 	bottom: 0;
@@ -35,8 +37,23 @@ nav{
 	right: -100%;
 	z-index: 0;
 	text-align: center;
+
+	-webkit-transition: all 0.8s ease-out; 
+	-moz-transition: all 0.8s ease-out; 
+	-o-transition: all 0.8s ease-out; 
+	trasition: all 0.8s ease-out;
 }
 
+
+	.stage:target{
+		left: 0;
+		right: 0;
+
+		-webkit-transition: all 1.4s ease-out; 
+		-moz-transition: all 1.4s ease-out; 
+		-o-transition: all 1.4s ease-out; 
+		trasition: all 1.4s ease-out;
+	}
 	.stage .text{
 		background: rgba(0,0,0,.4);
 		padding: 20px;
@@ -55,11 +72,6 @@ nav{
 			font-size: 2em;
 			line-height: 1.4em;
 		}
-
-.stage:target{
-	left: 0;
-	right: 0;
-}
 
 #container1{
 	background-color: blue;
