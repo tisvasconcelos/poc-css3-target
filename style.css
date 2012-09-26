@@ -28,8 +28,8 @@ nav{
 
 .stage{
 	position: fixed;
-	-webkit-background-size: 100% auto;
-	-moz-background-size: 100% auto;
+	-webkit-background-size: 100%;
+	-moz-background-size: 100%;
 	background-size: 100% auto;
 	top: 0;
 	bottom: 0;
